@@ -1,3 +1,12 @@
+1.2.0 (2024.03.18)
+- README file updated
+- media css added
+- base url added
+- build and deploy instructions added
+
+1.1.0 (2024.03.18)
+- README file updated
+
 1.0.0 (2024.03.18)
 - prettier added
 - redux, redux-thunk added

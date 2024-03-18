@@ -2,64 +2,43 @@ $card-image-width: 210px;
 $card-image-height: 162px;
 $border-radius: 18px;
 
+$d903px-card-image-width: 177px;
+$d903px-card-image-height: 162px;
+$d903px-card-height: 228px;
+
+$d1131px-card-image-width: 253px;
+$d1131px-card-image-height: 162px;
+$d1131px-card-height: 210px;
+
+$d1551px-card-image-width: 393px;
+$d1551px-card-image-height: 162px;
+$d1551px-card-height: 210px;
+
 .wrapper {
-  width: calc(100% - 25px * 2);
-  height: 100%;
-  padding: 0 25px;
+  width: calc(100% - 24px * 2);
+  height: calc(100% - 24px);
+  padding: 24px 24px 0 24px;
 }
 
 .wrapper__block1 {
   width: 264px;
+  margin-right: 4px;
   float: left;
 }
 
 .wrapper__block2 {
-  width: calc(100% - 264px);
+  width: calc(100% - 264px - 4px);
   float: left;
-}
-
-.cards {
-  display: flex;
-  float: left;
-  flex-wrap: wrap;
-}
-
-.cards li {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  width: $card-image-width;
-  height: $card-image-width;
-  box-shadow: rgba(35, 35, 93, 0.3) 0px 2px 2px;
-  margin: 22px;
-  border-radius: $border-radius;
-  overflow: hidden;
-}
-
-.card__image_block {
-  width: $card-image-width;
-  height: $card-image-height;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card__image_block > img {
-  width: inherit;
-  max-width: 144px;
-  max-height: 144px;
-}
-
-.card__image_text {
-  width: 100%;
-  text-align: center;
 }
 
 .tags {
-  float: left;
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
   border: 1px solid #cfcfe4;
   border-radius: $border-radius;
-  width: calc(264px - 12px * 2);
+  width: calc(264px - 12px * 2 - 1px * 2);
   display: flex;
   flex-wrap: wrap;
   padding: 12px;
@@ -83,4 +62,139 @@ $border-radius: 18px;
 .tags li[custom-attr-selected='1'] {
   background-color: #5fbf77;
   color: white;
+}
+
+@media screen and (max-width: 904px) {
+  .cards {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cards li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: $d903px-card-image-width;
+    height: $d903px-card-image-width;
+    box-shadow: rgba(35, 35, 93, 0.3) 0px 2px 2px;
+    margin: 0 8px 8px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    height: $d903px-card-height;
+  }
+
+  .card__image_block {
+    width: $d903px-card-image-width;
+    height: $d903px-card-image-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__image_block > img {
+    width: inherit;
+    max-width: 144px;
+    max-height: 144px;
+  }
+
+  .card__image_text {
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 18px;
+    width: calc(100% - 17px * 2);
+    padding: 0 17px;
+  }
+}
+
+@media screen and (min-width: 904px) and (max-width: 1132px) {
+  .cards {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cards li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: $d1131px-card-image-width;
+    height: $d1131px-card-image-width;
+    box-shadow: rgba(35, 35, 93, 0.3) 0px 2px 2px;
+    margin: 0 8px 8px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    height: $d1131px-card-height;
+  }
+
+  .card__image_block {
+    width: $d1131px-card-image-width;
+    height: $d1131px-card-image-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__image_block > img {
+    width: inherit;
+    max-width: 144px;
+    max-height: 144px;
+  }
+
+  .card__image_text {
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 18px;
+    width: calc(100% - 17px * 2);
+    padding: 0 17px;
+  }
+}
+
+@media screen and (min-width: 1133px) {
+  .cards {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cards li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: $d1551px-card-image-width;
+    height: $d1551px-card-image-width;
+    box-shadow: rgba(35, 35, 93, 0.3) 0px 2px 2px;
+    margin: 0 8px 8px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    height: $d1131px-card-height;
+  }
+
+  .card__image_block {
+    width: $d1551px-card-image-width;
+    height: $d1551px-card-image-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__image_block > img {
+    width: inherit;
+    max-width: 144px;
+    max-height: 144px;
+  }
+
+  .card__image_text {
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 18px;
+    width: calc(100% - 17px * 2);
+    padding: 0 17px;
+  }
 }

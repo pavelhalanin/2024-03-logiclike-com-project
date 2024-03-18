@@ -1,7 +1,7 @@
 {
   "name": "logiclike-com-test-project",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
