@@ -1,2 +1,10 @@
+1.0.0 (2024.03.18)
+- prettier added
+- redux, redux-thunk added
+- fetch logiclike.com added
+- scss added
+- tags html and logic added
+- cards html and logic added
+
 0.0.1 (2024.03.18)
 - vite React TypeScript project created
